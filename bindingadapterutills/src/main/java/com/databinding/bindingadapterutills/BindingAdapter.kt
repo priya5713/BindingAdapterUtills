@@ -10,6 +10,7 @@ import android.widget.TextView
 import com.bumptech.glide.Glide
 
 object AdapterBinding {
+    // for image view using glide
 
     @BindingAdapter("url")
     @JvmStatic
@@ -19,6 +20,7 @@ object AdapterBinding {
                 .into(imageView)
     }
 
+    // for recycler divider
     @BindingAdapter("divider")
     @JvmStatic
     fun recyclerAdapterBinding(recyclerView: RecyclerView, recyclerViewDivider: Boolean) {
@@ -27,8 +29,8 @@ object AdapterBinding {
         recyclerView.addItemDecoration(divider)
     }
 
-    //for pager
-    @BindingAdapter("textLayoutSwitch", "inAnimation", "outAnimation", requireAll = false)
+    //for textswitcher
+    @BindingAdapter("textview_layout", "inAnimation", "outAnimation", requireAll = false)
     @JvmStatic
     fun switcherBinding(textSwitcher: TextSwitcher, textSwitch: Int, inAnimation: Int, outAnimation: Int) {
 

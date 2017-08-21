@@ -15,7 +15,7 @@ class TextSwitcherActivity : AppCompatActivity() {
         binding.button2.setOnClickListener { binding.textSwitcher.setText((++value).toString()) }
         binding.button3.setOnClickListener { binding.textSwitcher.setText((--value).toString()) }
 
-        binding.textLayoutSwitch = R.layout.root_layout
+        binding.textviewLayout = R.layout.root_layout
 
     }
 }

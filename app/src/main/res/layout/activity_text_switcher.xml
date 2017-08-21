@@ -11,7 +11,7 @@
             type="com.databinding.adapterutills.TextSwitcherActivity" />
 
         <variable
-            name="textLayoutSwitch"
+            name="textview_layout"
             type="Integer" />
 
         <variable
@@ -58,7 +58,7 @@
             android:foregroundGravity="center"
             android:textSize="50sp"
             app:inAnimation="@{android.R.anim.slide_in_left}"
-            app:textLayoutSwitch="@{textLayoutSwitch}" />
+            app:textview_layout="@{textview_layout}" />
 
     </LinearLayout>
 </layout>
